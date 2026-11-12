@@ -1,0 +1,18 @@
+# Archivos a ignorar (rúbrica e informe)
+Rubrica.pdf
+informe_avance*
+
+# Archivos reservados localmente para Entregas 2 y 3 (se subirán por hitos)
+src/controllers/
+src/shield/
+scripts/benchmark_comparativo.py
+results/figures/comparativa_controladores.png
+results/logs/benchmark_kpis.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+venv/
