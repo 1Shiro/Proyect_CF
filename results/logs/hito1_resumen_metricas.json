@@ -1,0 +1,33 @@
+{
+  "proyecto": "S1 - Control inteligente vs. clasico con capa de seguridad",
+  "hito": "Hito 1 - Simulacion de la camara termica en lazo abierto contrastada con respuesta analitica",
+  "timestamp": "2026-11-11T16:52:58",
+  "parametros_planta": {
+    "R_th_C_per_W": 0.5,
+    "C_th_J_per_C": 240.0,
+    "tau_s": 120.0,
+    "P_max_W": 100.0,
+    "T_amb_C": 20.0,
+    "dt_s": 1.0
+  },
+  "metricas_escalon_50pct": {
+    "T_ss_teorica_C": 45.0,
+    "T_en_tau_teorica_C": 35.803,
+    "T_en_tau_sim_rk4_C": 35.80301397034174,
+    "euler": {
+      "rmse_degC": 0.021294638884458077,
+      "mae_degC": 0.017064156322476837,
+      "max_error_degC": 0.03845439038653353
+    },
+    "rk4": {
+      "rmse_degC": 2.063180677935956e-10,
+      "mae_degC": 1.654709311473281e-10,
+      "max_error_degC": 3.722036012732133e-10
+    }
+  },
+  "metricas_multiescalon_rk4": {
+    "rmse_degC": 3.002892298613974e-10,
+    "mae_degC": 2.734514045488874e-10,
+    "max_error_degC": 5.477573949974612e-10
+  }
+}
